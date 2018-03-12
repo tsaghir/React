@@ -31,7 +31,7 @@ class App extends Component{
       );
     }
 
-    this.state({
+    this.setState({
       text: '',
       currrentMessage: undefined
     })

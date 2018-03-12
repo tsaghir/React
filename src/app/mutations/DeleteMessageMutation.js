@@ -21,7 +21,7 @@ function sharedUpdater(store, user, deletedId){
         userProxy,
         'MessageList_messages',
     );
-    ConnectionHandler.deletedNode(
+    ConnectionHandler.deleteNode(
         conn,
         deletedId,
     );
