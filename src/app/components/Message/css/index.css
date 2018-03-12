@@ -1,0 +1,81 @@
+.message{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+    height: 80px;
+    width: 98%;
+    flex: 0 0 80px;
+}
+
+.message__avatar{
+    max-height: 60px;
+    max-width: 60px;
+    border-radius: 50%;
+    flex: 0 0 60px;
+}
+
+.message__textContainer{
+        position: relative;
+    background: #f7f7f7;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    margin-left: 20px;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.message__textContainer:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(247, 247, 247, 0);
+	border-right-color: #f7f7f7;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+.message__textContainer__content {
+  max-width: 100%;
+}
+
+.message__textContainer--backgroundGray {
+  background: #ccc;
+}
+
+.message__textContainer--backgroundGray:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(247, 247, 247, 0);
+	border-right-color: #ccc;
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+.message__dateContainer {
+  flex: 1 0 100%;
+  text-align: right;
+  padding: 5px 0 5px;
+}
+
+.message__editButton {
+  cursor: pointer;
+}
+
+.message__deleteButton {
+  margin-left: 5px;
+  cursor: pointer;
+}

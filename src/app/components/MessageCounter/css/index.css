@@ -1,0 +1,13 @@
+.totalCounter {
+    flex: 1 0 30px;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    background-color: #f7f7f7;
+    max-height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+  }
