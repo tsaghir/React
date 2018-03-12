@@ -2,9 +2,9 @@ import {
     commitMutation,
     graphql,
 } from 'react-relay'
-import {ConnectionHangler} from 'relay-runtime';
+import {ConnectionHandler} from 'relay-runtime';
 
-const mutation = graphql `
+const mutation = graphql`
     mutation DeleteMessageMutation($input: DeleteMessageInput!){
         deleteMessage(input: $input){
             deletedMessageId,
@@ -21,7 +21,7 @@ function sharedUpdater(store, user, deletedId){
         userProxy,
         'MessageList_messages',
     );
-    ConnectionHangler.deletedNode(
+    ConnectionHandler.deletedNode(
         conn,
         deletedId,
     );

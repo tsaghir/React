@@ -11,7 +11,7 @@ import CreateMessageMutation from '../../mutations/CreateMessageMutation';
 import UpdateMessageMutation from '../../mutations/UpdateMessageMutation';
 
 class App extends Component{
-  state ={
+  state = {
     text: '',
     currentMessage: undefined
   };

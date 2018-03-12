@@ -47,7 +47,7 @@ function commit(
             variables: {
                 input: {
                     text,
-                    clientMutationId: tempID++,
+                    clientMutationId: tempId++,
                 },
             },
             updater: (store) => {
@@ -56,7 +56,7 @@ function commit(
                 sharedUpdater(store, user, newEdge);
             },
             optimisticUpdater: (store) => {
-                const id = 'client:newMessage:' + tempID++;
+                const id = 'client:newMessage:' + tempId++;
                 const node = store.create(id, 'Message');
                 node.setValue(text, 'text');
                 node.setValue(id, 'id');
